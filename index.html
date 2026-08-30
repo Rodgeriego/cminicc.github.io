@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171812">
+  <title>Classic Mini Cheshire Collective | CMCC</title>
+  <meta name="description" content="Classic Mini Cheshire Collective — a Classic Mini club for Cheshire and the surrounding areas.">
+  <link rel="icon" href="images/cmcc-badge.png">
+  <style>
+    :root{
+      --black:#11120f; --panel:#191b16; --green:#69782b; --green2:#8b9b3b;
+      --cream:#f2ead7; --muted:#b9b39f; --line:#39401d;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; background:var(--black); color:var(--cream);
+      font-family:Arial,Helvetica,sans-serif; line-height:1.6;
+    }
+    a{color:inherit}
+    .wrap{width:min(calc(100% - 36px),var(--max));margin:auto}
+    header{
+      position:sticky;top:0;z-index:10;background:rgba(17,18,15,.94);
+      border-bottom:1px solid var(--line);backdrop-filter:blur(10px);
+    }
+    nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;letter-spacing:.08em}
+    .brand img{width:44px;height:44px;object-fit:contain}
+    .brand span{font-size:15px}
+    .links{display:flex;gap:24px}
+    .links a{text-decoration:none;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+    .links a:hover{color:var(--green2)}
+    .hero{padding:70px 0 80px}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:50px}
+    .eyebrow{color:var(--green2);font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+    h1{
+      font-family:Georgia,"Times New Roman",serif;font-size:clamp(42px,7vw,76px);
+      line-height:.98;margin:14px 0 20px;letter-spacing:-.035em;
+    }
+    .hero p{font-size:20px;color:var(--muted);max-width:650px}
+    .buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .btn{display:inline-block;padding:12px 18px;border:1px solid var(--green2);text-decoration:none;font-weight:800;text-transform:uppercase;letter-spacing:.07em;font-size:12px}
+    .btn.primary{background:var(--green);border-color:var(--green);color:#fff}
+    .badge{width:min(100%,470px);display:block;margin:auto;filter:drop-shadow(0 20px 35px rgba(0,0,0,.45))}
+    section{padding:75px 0;border-top:1px solid #292c21}
+    .section-title{font-family:Georgia,"Times New Roman",serif;font-size:42px;margin:0 0 12px}
+    .intro{color:var(--muted);max-width:720px;font-size:18px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+    .card{background:var(--panel);border:1px solid #2c3024;padding:26px}
+    .card h3{margin:0 0 8px;font-size:18px}
+    .card p{margin:0;color:var(--muted)}
+    .event{display:flex;justify-content:space-between;gap:20px;align-items:center;background:var(--panel);border-left:4px solid var(--green);padding:22px 24px;margin-top:20px}
+    .event small{color:var(--green2);font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .event h3{margin:3px 0 0}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+    .placeholder{aspect-ratio:4/3;background:#20231b;border:1px dashed #4a512d;display:grid;place-items:center;color:#777b68;text-align:center;padding:15px}
+    .contact{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}
+    .email{font-size:clamp(20px,4vw,32px);font-weight:800;color:var(--cream);text-decoration:none}
+    footer{padding:30px 0;color:#777b68;font-size:13px;border-top:1px solid #292c21}
+    @media(max-width:800px){
+      .links{display:none}
+      .hero{padding-top:45px}
+      .hero-grid,.contact{grid-template-columns:1fr}
+      .hero-grid{gap:35px}
+      .badge{max-width:360px}
+      .cards,.gallery{grid-template-columns:1fr}
+      .section-title{font-size:35px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#top">
+        <img src="images/cmcc-badge.png" alt="CMCC badge">
+        <span>CMCC</span>
+      </a>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#join">Join</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Est. 2026 · Cheshire</div>
+        <h1>Classic Mini<br>Cheshire Collective</h1>
+        <p>A local club for people who love the original Classic Mini — from restored classics to well-used weekend toys.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#join">Join CMCC</a>
+          <a class="btn" href="#events">See events</a>
+        </div>
+      </div>
+      <div>
+        <img class="badge" src="images/cmcc-badge.png" alt="Classic Mini Cheshire Collective badge">
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <h2 class="section-title">About CMCC</h2>
+      <p class="intro">Classic Mini Cheshire Collective is a Classic Mini-only club based around Cheshire East and the surrounding areas. The idea is simple: get the cars together, drive some good roads, go to shows and enjoy the Mini community.</p>
+      <div class="cards">
+        <div class="card"><h3>Classic Minis only</h3><p>Our club is for the original Mini, not the modern BMW MINI.</p></div>
+        <div class="card"><h3>Good roads</h3><p>Cheshire lanes, the Peaks and everywhere in between. The cars are meant to be driven.</p></div>
+        <div class="card"><h3>Friendly & informal</h3><p>No unnecessary fuss. Just owners, cars, meets, runs and a shared obsession with Minis.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="events">
+    <div class="wrap">
+      <h2 class="section-title">Events & runs</h2>
+      <p class="intro">This is where we'll list upcoming CMCC meets, drives, shows and other club activities.</p>
+      <div class="event">
+        <div><small>Coming soon</small><h3>First CMCC meet</h3></div>
+        <div class="eyebrow">2026</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <h2 class="section-title">The Minis</h2>
+      <p class="intro">Members' cars and photos from CMCC meets will live here.</p>
+      <div class="gallery">
+        <div class="placeholder">Your Mini could be here.</div>
+        <div class="placeholder">Members' cars</div>
+        <div class="placeholder">CMCC runs</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="join">
+    <div class="wrap contact">
+      <div>
+        <h2 class="section-title">Join CMCC</h2>
+        <p class="intro">Want to bring your Classic Mini along? Drop us an email and we'll get you involved.</p>
+      </div>
+      <a class="email" href="mailto:info@cminicc.co.uk">info@cminicc.co.uk</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Classic Mini Cheshire Collective · CMCC</div>
+</footer>
+</body>
+</html>

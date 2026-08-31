@@ -58,6 +58,22 @@
     .placeholder{aspect-ratio:4/3;background:#20231b;border:1px dashed #4a512d;display:grid;place-items:center;color:#777b68;text-align:center;padding:15px}
     .contact{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}
     .email{font-size:clamp(20px,4vw,32px);font-weight:800;color:var(--cream);text-decoration:none}
+    .join-action{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:12px;
+}
+
+.join-note{
+  margin:0;
+  color:var(--muted);
+  font-size:16px;
+}
+
+.join-action .email{
+  font-size:20px;
+}
     footer{padding:30px 0;color:#777b68;font-size:13px;border-top:1px solid #292c21}
     @media(max-width:800px){
       .links{display:none}

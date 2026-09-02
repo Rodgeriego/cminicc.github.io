@@ -50,9 +50,10 @@
     .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px}
 .event-types{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(3,minmax(0,1fr));
   gap:18px;
   margin-top:30px;
+  width:100%;
 }
     .card{background:var(--panel);border:1px solid #2c3024;padding:26px}
     .card h3{margin:0 0 8px;font-size:18px}
